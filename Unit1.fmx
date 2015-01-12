@@ -1,0 +1,66 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 542
+  ClientWidth = 416
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object ToolBar2: TToolBar
+    Align = Bottom
+    Position.Y = 498.000000000000000000
+    Size.Width = 416.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Button1: TButton
+      Align = Left
+      Size.Width = 201.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Button1'
+      Visible = False
+      OnClick = Button1Click
+    end
+    object Label1: TLabel
+      Align = Right
+      Position.X = 136.000000000000000000
+      Size.Width = 280.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Label1'
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 416.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Button2: TButton
+      Align = Client
+      Size.Width = 416.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Button2'
+      Visible = False
+      OnClick = Button2Click
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 416.000000000000000000
+    Size.Height = 454.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = ListBox1ItemClick
+  end
+end
