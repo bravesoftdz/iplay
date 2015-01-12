@@ -1,0 +1,12 @@
+inherited Form2_iPhone: TForm2_iPhone
+  ClientHeight = 460
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 320.000000000000000000
+    Size.Height = 416.000000000000000000
+  end
+end

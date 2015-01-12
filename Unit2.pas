@@ -34,6 +34,9 @@ implementation
  uses unit1;
 {$R *.fmx}
 {$R *.iPhone4in.fmx IOS}
+{$R *.iPhone.fmx IOS}
+{$R *.NmXhdpiPh.fmx ANDROID}
+
 //*** ќбщий вывод строки из UTF-16 в UTF-8 ******///////
 function utf16decode(const encode:string):string;
 var
