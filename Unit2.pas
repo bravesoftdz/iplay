@@ -17,6 +17,8 @@ type
     ListBox1: TListBox;
     procedure FormShow(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure ListBox1ItemClick(const Sender: TCustomListBox;
+      const Item: TListBoxItem);
     //procedure showtitle;
    // procedure gettitle(s:string);
   private
@@ -94,6 +96,7 @@ begin
   ss:=s;
   while pos('"title":',ss)>0 do delete(ss,pos('"title":',ss),8);
   while pos('"id":',ss)>0 do delete(ss,pos('"id":',ss),5);
+  while pos('\\\"',ss)>0 do delete(ss,pos('\\\"',ss),4);
   n:=0;
   i:=n-1;
   while pos('"',ss)>0 do begin
@@ -171,4 +174,12 @@ end;
 
 end;
 
+procedure TForm2.ListBox1ItemClick(const Sender: TCustomListBox;
+  const Item: TListBoxItem);
+begin
+  unit2.Form2.category:=a2[item.Index-1];
+  form2.hide;
+end;
+
 end.
+

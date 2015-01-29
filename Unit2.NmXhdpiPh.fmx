@@ -4,9 +4,6 @@ inherited Form2_NmXhdpiPh: TForm2_NmXhdpiPh
   DesignerMasterStyle = 0
   inherited ToolBar1: TToolBar
     Size.Width = 400.000000000000000000
-    inherited Button2: TButton
-      Size.Height = 48.000000000000000000
-    end
   end
   inherited ListBox1: TListBox
     Size.Width = 400.000000000000000000

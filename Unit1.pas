@@ -113,6 +113,8 @@ begin
   ss:=s;
   while pos('"name":',ss)>0 do delete(ss,pos('"name":',ss),7);
   while pos('"id":',ss)>0 do delete(ss,pos('"id":',ss),5);
+  while pos('\\\"',ss)>0 do delete(ss,pos('\\\"',ss),4);
+
   n:=0;
   i:=n-1;
   while pos('"',ss)>0 do begin
